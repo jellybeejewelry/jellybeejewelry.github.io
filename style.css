@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'SparkyStones';
+  src: url('fonts/sparky_stones.woff2');
+  /* font-weight: normal; */
+  /* font-style: normal; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  background-color: #EDCAC5;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  background-color: white;
+  color: rgb(226, 93, 83);
+  font-size: 15px;
+}
+
+.logo {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  text-align: left;
+}
+
+.left-column {
+  margin-top: 50px;
+}
+
+.stars {
+  list-style-type: "✦ ";
+  margin: 0;
+}
+
+.stars li {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.header {
+  font-family: 'SparkyStones';
+  font-size: 42px;
+  margin-top: 0;
+}
+
+.title {
+  font-family: 'SparkyStones';
+  font-size: 68px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.event {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  background-color: rgb(253, 146, 9);
+  color: white;
+}
+
+.title a, .event a {
+  all: unset;
+}
+
+@media (max-width: 1200px) {
+  .columns {
+    flex-direction: column; /* Change to column layout for mobile */
+  }
+
+  .title {
+    width: 80%;
+    font-size: 8vw;
+    margin-bottom: 0;
+  }
+
+  .left-column {
+    margin-top: 0;
+  }
+}
